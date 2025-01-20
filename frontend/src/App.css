@@ -1,0 +1,187 @@
+.main-content {
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  height: 600px;
+}
+
+.navBarCustom {
+  background-color: #181a1be3;
+}
+
+.navBrand {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  color: #FF6347 !important;
+}
+
+.navItem {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.navBrand:hover, .navItem:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.MovieCard {
+  height: 1000px;
+  width: 400px;
+  margin: 10px;
+  padding: 0px;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+.MovieCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.MovieCard::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.164), rgba(255, 255, 255, 0));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.MovieCard:hover::before {
+  opacity: 1;
+}
+
+.movie-poster {
+  aspect-ratio: 2/3;
+  width: 100%;
+}
+
+.movie-overlay {
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.movie-poster:hover .movie-overlay {
+  opacity: 1;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: none;
+  padding-top: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.favorite-btn:hover {
+  background-color: #696969;
+}
+
+.favorite-btn.active {
+  color: #FF6347;;
+}
+
+.favorites {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #181A1B;
+}
+
+.favorites h2 {
+  color: #FF6347;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.favorites-empty {
+  text-align: center;
+  background-color: #181A1B;
+  padding-top: 20px;
+}
+
+.favorites-empty h2 {
+  font-size: 2rem;
+  color: #FF6347;
+}
+
+.favorites-empty p {
+  color: #999;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.MovieList {
+  color: white;
+  font-family:'Roboto', sans-serif;
+  line-height: 1.5rem;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #181A1B;
+}
+
+.MovieTitle {
+  color: #FF6347;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn {
+  background-color: #FF6347 !important;
+  color: white !important;
+}
+
+.submit-btn:hover {
+  background-color: #ff5739 !important;
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+
+.submit-btn:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+
+.custom-input {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #696969 !important;
+}
+
+.custom-input::placeholder {
+  color: white !important;
+}
+
+.custom-input:focus, .custom-input:hover {
+  box-shadow: none !important;
+  border: none !important;
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+
+.custom-input:not(:focus):not(:hover) {
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
