@@ -1,8 +1,14 @@
-# React + Vite
+# Movie App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie App is a simple Vite + React application that allows you to search for movies and TV shows and save them as favorites.
 
-Currently, two official plugins are available:
+## Features  
+- Search for movies and TV shows
+- View some information about each result
+- Add to and remove from favorites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used  
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/)  
+- [Bootstrap](https://getbootstrap.com/) for styling  
+- [TMDb API](https://www.themoviedb.org/) for fetching movie data  
+- `sessionStorage` for storing favorites  
