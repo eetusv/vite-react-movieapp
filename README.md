@@ -5,7 +5,7 @@ Movie App is a simple Vite + React application that allows you to search for mov
 ## Features  
 - Search for movies and TV shows
 - View some information about each result
-- Add to and remove from favorites
+- Add/remove movies/TV shows from favorites
 
 ## Technologies Used  
 - [Vite](https://vitejs.dev/) + [React](https://react.dev/)  
