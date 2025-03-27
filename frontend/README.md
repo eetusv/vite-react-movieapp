@@ -11,4 +11,3 @@ Movie App is a simple Vite + React application that allows you to search for mov
 - [Vite](https://vitejs.dev/) + [React](https://react.dev/)  
 - [Bootstrap](https://getbootstrap.com/) for styling  
 - [TMDb API](https://www.themoviedb.org/) for fetching movie data  
-- `sessionStorage` for storing favorites  
